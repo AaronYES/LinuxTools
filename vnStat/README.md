@@ -1,6 +1,11 @@
-自用 vnStat 配置
+vnStat 2.6 config file
 
-修改内容
+```
+mv /etc/vnstat.conf /etc/vnstat.conf.old && wget https://raw.githubusercontent.com/AaronYES/LinuxTools/main/vnStat/vnstat.conf -O /etc/vnstat.conf && systemctl restart vnstat
+```
+
+The modified content is as follows
+
 ```
 # try to detect interface maximum bandwidth, 0 = disable feature
 # MaxBandwidth will be used as fallback value when enabled
